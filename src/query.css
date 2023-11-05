@@ -158,9 +158,6 @@
     justify-content: center;
   }
 
-  .about-item:nth-child(2) {
-  }
-
   .pf-img {
     grid-row: 1;
   }
@@ -265,5 +262,11 @@
   }
   .col-1-of-2 {
     width: 100%;
+  }
+
+  .tech-grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
