@@ -51,7 +51,9 @@ function Contact() {
             <label>Message</label>
             <textarea name="message" />
           </div>
-          <button type="submit">{isLoading ? "Submitting" : "Send"}</button>
+          <button type="submit" className="form-btn">
+            {isLoading ? "Submitting" : "Send"}
+          </button>
         </form>
       </div>
     </div>

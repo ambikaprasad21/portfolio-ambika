@@ -11,8 +11,8 @@ library.add(fab, faPenToSquare, faGears, faPager);
 
 function Services() {
   return (
-    <div className="services-bg-color">
-      <div className="center">
+    <div className="center-services services-bg-color">
+      <div className="center c-mb">
         <div className="section-services">
           <div className="about-text">
             <p className="discover">What I Do</p>

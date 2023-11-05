@@ -1,5 +1,6 @@
 import About from "./About";
 import "./App.css";
+import "./query.css";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Header from "./Header";
