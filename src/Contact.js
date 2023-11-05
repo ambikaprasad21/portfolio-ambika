@@ -30,33 +30,36 @@ function Contact() {
       );
   };
   return (
-    <div className="section-contact">
-      <div className="bg-video">
-        <video className="bg-video__content" autoPlay muted loop>
-          {/* <source src="/images/contact/video.webm" type="video/webm" /> */}
-          <source src="/images/contact/video.mp4" type="video/mp4" />
-        </video>
+    <>
+      <p className="contact-me">Contact Me</p>
+      <div className="section-contact">
+        <div className="bg-video">
+          <video className="bg-video__content" autoPlay muted loop>
+            {/* <source src="/images/contact/video.webm" type="video/webm" /> */}
+            <source src="/images/contact/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className="form-block">
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="f-name form-el">
+              <label>Full Name</label>
+              <input type="text" required name="user_name" />
+            </div>
+            <div className="email form-el">
+              <label>Email Address</label>
+              <input type="email" required name="user_email" />
+            </div>
+            <div className="message span-message form-el">
+              <label>Message</label>
+              <textarea name="message" />
+            </div>
+            <button type="submit" className="form-btn">
+              {isLoading ? "Submitting" : "Send"}
+            </button>
+          </form>
+        </div>
       </div>
-      <div className="form-block">
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="f-name form-el">
-            <label>Full Name</label>
-            <input type="text" required name="user_name" />
-          </div>
-          <div className="email form-el">
-            <label>Email Address</label>
-            <input type="email" required name="user_email" />
-          </div>
-          <div className="message span-message form-el">
-            <label>Message</label>
-            <textarea name="message" />
-          </div>
-          <button type="submit" className="form-btn">
-            {isLoading ? "Submitting" : "Send"}
-          </button>
-        </form>
-      </div>
-    </div>
+    </>
   );
 }
 

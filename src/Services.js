@@ -33,16 +33,16 @@ function Services() {
               <FontAwesomeIcon icon={faGears} className="icon-medium" />
               <p className="service-name">Functional</p>
               <p className="service-message">
-                We're committed to creating websites that not only look stunning
-                but also deliver real results
+                Committed for creating websites that not only look stunning but
+                also deliver real results
               </p>
             </div>
             <div className="services-grid-item">
               <FontAwesomeIcon icon={faPager} className="icon-medium" />
               <p className="service-name"> User Interface</p>
               <p className="service-message">
-                Our passion lies in crafting exceptional user experiences
-                through thoughtful and visually appealing user interfaces.
+                My passion lies in crafting exceptional user experiences through
+                thoughtful and visually appealing user interfaces.
               </p>
             </div>
           </div>

@@ -3,34 +3,34 @@ import TechItem from "./TechItem";
 function Technology() {
   const technologiesImages = [
     {
-      src: "html",
+      src: "HTML",
     },
     {
-      src: "css",
+      src: "CSS",
     },
     {
-      src: "javascript",
+      src: "JavaScript",
     },
     {
-      src: "nodejs",
+      src: "Nodejs",
     },
     {
-      src: "mongoDb",
+      src: "mongoDB",
     },
     {
-      src: "mySql",
+      src: "MySQL",
     },
     {
-      src: "react",
+      src: "React",
     },
     {
-      src: "tailwind",
+      src: "Tailwind",
     },
     {
-      src: "c++",
+      src: "C++",
     },
     {
-      src: "python",
+      src: "Python",
     },
   ];
 
