@@ -154,16 +154,15 @@
 @media (max-width: 700px) {
   .about-content {
     grid-template-columns: 1fr;
-    /* place-items: center; */
+    align-items: center;
+    justify-content: center;
   }
 
   .about-item:nth-child(2) {
-    grid-row: 1;
   }
 
   .pf-img {
-    justify-self: center;
-    align-self: center;
+    grid-row: 1;
   }
 
   .pf-img img {
@@ -261,8 +260,10 @@
     padding: 1rem 1rem;
     gap: 1.5rem;
   }
-
-  form {
-    padding: 2rem 0;
+  .section-contact {
+    height: 50rem;
+  }
+  .col-1-of-2 {
+    width: 100%;
   }
 }
