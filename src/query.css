@@ -261,4 +261,8 @@
     padding: 1rem 1rem;
     gap: 1.5rem;
   }
+
+  form {
+    padding: 2rem 0;
+  }
 }
