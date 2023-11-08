@@ -416,6 +416,9 @@ p {
 
 .card__side--back {
   transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__side--back-1 {
@@ -462,7 +465,7 @@ p {
 } */
 
 .card-back {
-  /* padding: 5rem 2rem; */
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
