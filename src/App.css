@@ -22,8 +22,8 @@ p {
 .header {
   height: 95vh;
   background-image: radial-gradient(
-      rgba(73, 80, 87, 0.4),
-      rgba(52, 58, 64, 0.4)
+      rgba(73, 80, 87, 0.6),
+      rgba(52, 58, 64, 0.6)
     ),
     url("../public/images/bg-2.jpg");
 
