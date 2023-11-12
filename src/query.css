@@ -263,4 +263,8 @@
   .col-1-of-2 {
     width: 100%;
   }
+
+  .form-block {
+    width: 60%;
+  }
 }

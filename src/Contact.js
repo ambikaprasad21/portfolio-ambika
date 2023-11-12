@@ -4,6 +4,11 @@ import { useRef, useState } from "react";
 function Contact() {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
+  const [charCount, setCharCount] = useState(0);
+
+  function handleCount(e) {
+    setCharCount((count) => (count = e.target.value.length));
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -51,7 +56,12 @@ function Contact() {
             </div>
             <div className="message span-message form-el">
               <label>Message</label>
-              <textarea name="message" />
+              <textarea
+                name="message"
+                maxLength={1000}
+                onChange={handleCount}
+              />
+              <div className="charCount">{charCount}/1000</div>
             </div>
             <button type="submit" className="form-btn">
               {isLoading ? "Submitting" : "Send"}

@@ -1,37 +1,15 @@
-/* @import "~font-awesome/css/font-awesome.min.css"; */
-/* @import "~ionicons/dist/css/ionicons.min.css"; */
-
 :root {
   --primary-color: rgba(220, 120, 39, 0.849);
   --form-label-color: rgba(255, 255, 255, 0.8);
   --form-ls: 2px;
   --form-fs: 1.5rem;
   --outline-color: orange;
-  /* --button-bg-color: rgba(220, 120, 39, 0.635); */
   --button-color: rgba(255, 255, 255, 0.788);
-  /* --header-font-size: 2rem;
-  --header-l-s: 1px;
-  --header-fw: 600;
-  --header-color: rgb(255, 255, 255); */
 }
-
-/* .App {
-  text-align: center;
-}  */
 
 p {
   margin: 0;
 }
-
-/* .bg-img {
-  height: 95dvh;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-image: url("./../images/bg-1.jpg");
-} */
-
-/* Header */
 
 .section-header {
   padding: 3rem 5rem 0 5rem;
@@ -41,20 +19,13 @@ p {
   color: #adb5bd;
 }
 
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  color: #adb5bd;
-  z-index: 10;
-} */
-
 .header {
   height: 95vh;
   background-image: radial-gradient(
-      rgba(73, 80, 87, 0.8),
-      rgba(52, 58, 64, 0.8)
+      rgba(73, 80, 87, 0.4),
+      rgba(52, 58, 64, 0.4)
     ),
-    url("../public/images/bg-1.jpg");
+    url("../public/images/bg-2.jpg");
 
   background-size: cover;
   background-position: top;
@@ -103,8 +74,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 50rem; */
-  /* margin: 0 auto; */
 }
 
 .h1 {
@@ -113,7 +82,6 @@ p {
   margin-bottom: 2rem;
   letter-spacing: 0.5rem;
   color: var(--primary-color);
-  /* line-height: 5px; */
 }
 
 .h1 span {
@@ -134,12 +102,8 @@ p {
 }
 
 .section-about {
-  /* display: flex;
-  flex-direction: row-reverse; */
-  /* grid-template-columns: 1fr 1fr; */
-  /* align-items: center; */
   margin: 5rem;
-  /* justify-content: center; */
+
   padding: 0 5rem;
 }
 
@@ -149,13 +113,10 @@ p {
 
 .about-content {
   display: grid;
-  /* flex-direction: row-reverse; */
   grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .pf-img {
@@ -163,7 +124,6 @@ p {
 }
 
 .pf-img img {
-  /* display: block; */
   width: 100%;
 }
 
@@ -188,7 +148,7 @@ p {
 .intro-para {
   font-size: 1.8rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.267);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 2.5rem;
   margin-bottom: 3rem;
   padding-top: 2rem;
@@ -318,7 +278,6 @@ p {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  /* row-gap: 4rem; */
   column-gap: 2rem;
   padding-top: 5rem;
 }
@@ -332,10 +291,8 @@ p {
   align-items: flex-start;
   justify-self: start;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
+
   gap: 2rem;
-  /* background-color: #495057; */
   transition: all 500ms;
 }
 
@@ -406,10 +363,6 @@ p {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-/* #ffb900
-  #ff7730
-*/
-
 .card__side--front {
   background-color: white;
 }
@@ -448,10 +401,6 @@ p {
 
 .card:hover .card__side--back {
   transform: rotateY(0);
-}
-
-.card__picture {
-  /* background-size: cover; */
 }
 
 .card__picture img {
@@ -540,7 +489,7 @@ p {
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.6;
   overflow: hidden;
 }
 
@@ -552,6 +501,7 @@ p {
 
 .form-block {
   margin: 0 auto;
+  width: 50%;
   padding: 5rem 0rem;
   position: absolute;
   top: 50%;
@@ -564,7 +514,6 @@ form {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 4rem;
   column-gap: 3rem;
-  /* width: 80rem; */
 }
 
 .span-message {
@@ -595,7 +544,6 @@ input {
 input:focus {
   outline: 3px solid var(--outline-color);
   outline-offset: 2px;
-  /* border: 7px solid #ffe14c; */
 }
 
 textarea {
@@ -606,6 +554,17 @@ textarea {
   font-size: 1.5rem;
   color: rgba(12, 12, 12);
   font-weight: 500;
+}
+
+.message {
+  position: relative;
+}
+
+.charCount {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  color: #888;
 }
 
 textarea:focus {
@@ -646,7 +605,7 @@ button:hover {
   padding-right: 2rem;
   padding-top: 4rem;
   padding-bottom: 1rem;
-  /* max-width: 70%; */
+
   margin: 0 auto;
 }
 
@@ -665,7 +624,7 @@ button:hover {
 
 .name p {
   font-size: var(--form-fs);
-  /* font-weight: 200; */
+
   letter-spacing: var(--form-ls);
   color: var(--form-label-color);
 }
@@ -673,7 +632,7 @@ button:hover {
 .misson {
   font-size: var(--form-fs);
   letter-spacing: var(--form-ls);
-  /* font-weight: 400; */
+
   color: var(--form-label-color);
 }
 
@@ -724,7 +683,7 @@ button:hover {
   cursor: pointer;
   color: white;
   border-radius: 50%;
-  /* padding: 2rem; */
+
   background-color: var(--primary-color);
 }
 
