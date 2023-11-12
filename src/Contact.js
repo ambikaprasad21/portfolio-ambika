@@ -10,6 +10,10 @@ function Contact() {
     setCharCount((count) => (count = e.target.value.length));
   }
 
+  function resetCharCount() {
+    setCharCount(0);
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -63,7 +67,7 @@ function Contact() {
               />
               <div className="charCount">{charCount}/1000</div>
             </div>
-            <button type="submit" className="form-btn">
+            <button type="submit" className="form-btn" onClick={resetCharCount}>
               {isLoading ? "Submitting" : "Send"}
             </button>
           </form>
