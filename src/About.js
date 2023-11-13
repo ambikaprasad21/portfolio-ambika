@@ -1,6 +1,25 @@
-// import myPhoto from "/images/ambika.jpg";
-
 function About() {
+  const handleDownload = () => {
+    // Replace 'your-pdf-file-url.pdf' with the actual URL of your PDF file.
+    const pdfUrl = "./resume.pdf";
+
+    // Create a link element
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+
+    // Set the download attribute to specify the filename
+    link.download = "Ambika-Presad-resume.pdf";
+
+    // Append the link to the body
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the DOM
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="center">
       <div className="section-about">
@@ -46,12 +65,14 @@ function About() {
               </div>
             </div>
             <div className="flex-end">
-              <a
+              {/* <a
                 href="https://drive.google.com/file/d/1vFo-DCT9150JNkGx6gkDP8Wn-oLwQS3a/view?usp=sharing"
                 download
-              >
-                <button className="download-btn">DOWNLOAD RESUME</button>
-              </a>
+              > */}
+              <button className="download-btn" onClick={handleDownload}>
+                DOWNLOAD RESUME
+              </button>
+              {/* </a> */}
             </div>
           </div>
           <div className="pf-img about-item">
