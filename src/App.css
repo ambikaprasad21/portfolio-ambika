@@ -640,6 +640,7 @@ button:hover {
 .social-media {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 

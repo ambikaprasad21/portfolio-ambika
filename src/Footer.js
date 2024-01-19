@@ -19,10 +19,10 @@ function Footer() {
           <p>Social media handles</p>
           <div className="media-icon">
             <div className="social">
-              <p>Linkdein</p>
+              {/* <p>Linkdein</p> */}
               <a
                 href="https://www.linkedin.com/in/ambikaprasad01"
-                title="linkdein"
+                title="linkdein profile"
                 target="_blank"
               >
                 <FontAwesomeIcon
@@ -31,16 +31,29 @@ function Footer() {
                 />
               </a>
             </div>
-            <p className="logo-divider">|</p>
+            {/* <p className="logo-divider">|</p> */}
             <div className="social">
-              <p>Twitter</p>
+              {/* <p>Twitter</p> */}
               <a
                 href="https://twitter.com/Ambika_mnnit21"
-                title="twitter"
+                title="twitter account"
                 target="_blank"
               >
                 <FontAwesomeIcon
                   icon="fa-brands fa-square-twitter"
+                  className="sc-icon"
+                />
+              </a>
+            </div>
+            <div className="social">
+              {/* <p>Linkdein</p> */}
+              <a
+                href="https://github.com/ambikaprasad21"
+                title="github profile"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon="fa-brands fa-github"
                   className="sc-icon"
                 />
               </a>
