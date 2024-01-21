@@ -1,3 +1,7 @@
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 import TechItem from "./TechItem";
 
 function Technology() {
@@ -34,8 +38,22 @@ function Technology() {
     },
   ];
 
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0, transition: { duration: 0.7 } });
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="center">
+    <motion.div
+      className="center"
+      ref={ref}
+      animate={controls}
+      initial={{ opacity: 0, y: 100 }}
+    >
       <div className="section-tech">
         <p className="discover">Skills</p>
         <div className="section-heading">
@@ -49,7 +67,7 @@ function Technology() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

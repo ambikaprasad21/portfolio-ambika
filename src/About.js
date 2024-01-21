@@ -1,3 +1,7 @@
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 function About() {
   const handleDownload = () => {
     // Replace 'your-pdf-file-url.pdf' with the actual URL of your PDF file.
@@ -19,9 +23,22 @@ function About() {
     // Remove the link from the DOM
     document.body.removeChild(link);
   };
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0, transition: { duration: 0.7 } });
+    }
+  }, [controls, inView]);
 
   return (
-    <div className="center">
+    <motion.div
+      className="center"
+      ref={ref}
+      animate={controls}
+      initial={{ opacity: 0, y: 70 }}
+    >
       <div className="section-about">
         <div className="about-heading">
           <p className="discover">Discover</p>
@@ -84,7 +101,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

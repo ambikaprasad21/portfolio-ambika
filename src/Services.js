@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +11,21 @@ import {
 library.add(fab, faPenToSquare, faGears, faPager);
 
 function Services() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollValue = window.scrollY;
+      const parallaxValue = scrollValue * 0.4; // Adjust the parallax effect as needed
+      document.querySelector(
+        ".center-services"
+      ).style.backgroundPositionY = `-${parallaxValue}px`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="center-services services-bg-color">
       <div className="center c-mb">
