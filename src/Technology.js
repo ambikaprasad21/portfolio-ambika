@@ -37,7 +37,7 @@ function Technology() {
       src: "Python",
     },
     {
-      src: "Express",
+      src: "ex",
     },
     {
       src: "Git",
