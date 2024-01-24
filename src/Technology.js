@@ -36,6 +36,12 @@ function Technology() {
     {
       src: "Python",
     },
+    {
+      src: "Express",
+    },
+    {
+      src: "Git",
+    },
   ];
 
   const controls = useAnimation();
