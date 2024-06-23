@@ -32,6 +32,9 @@ function About() {
     }
   }, [controls, inView]);
 
+  const date = new Date();
+  const currYear = date.getFullYear();
+
   return (
     <motion.div
       className="center"
@@ -71,7 +74,7 @@ function About() {
               </div>
               <div className="box-right box-left">
                 <p>
-                  Age: <span>21</span>
+                  Age: <span>{currYear - 2003}</span>
                 </p>
                 <p>
                   Address: <span>Prayagraj, INDIA</span>
