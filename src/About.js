@@ -85,14 +85,9 @@ function About() {
               </div>
             </div>
             <div className="flex-end">
-              {/* <a
-                href="https://drive.google.com/file/d/1vFo-DCT9150JNkGx6gkDP8Wn-oLwQS3a/view?usp=sharing"
-                download
-              > */}
               <button className="download-btn" onClick={handleDownload}>
                 DOWNLOAD RESUME
               </button>
-              {/* </a> */}
             </div>
           </div>
           <div className="pf-img about-item">
